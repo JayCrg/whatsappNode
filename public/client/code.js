@@ -1,8 +1,8 @@
 var photo;
-var socket = io();
-// var socket = io("https://whatsapp-clone-abq3.onrender.com", {
-  // path: "/socket.io/",
-// });
+// var socket = io();
+var socket = io("https://whatsappnode.onrender.com", {
+  path: "/socket.io/",
+});
 
 function uploadUserPhoto(files) {
   photo = files[0];
