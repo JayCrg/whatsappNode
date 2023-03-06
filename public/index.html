@@ -22,22 +22,25 @@
         </div>
         
         <div class="d-flex justify-content-center align-items-center gap-5 w-100 mt-3 mb-3">
-            <form  class="d-flex flex-column justify-content-center align-items-center gap-5 w-100 mt-3 mb-3">
-                <div class="d-flex justify-content-center align-items-center gap-3 w-50">
-                    <input id="usernameInput" type="text" class="form-control p-3" placeholder="Inicia sesion" autocomplete="off" required>
+            <form id="joinChat" class="d-flex flex-column justify-content-center align-items-center gap-5 w-100 mt-3 mb-3">
+                <div class="d-flex justify-content-center align-items-center gap-3 w-50 search-chat">
+                    <input id="usernameInput" type="text" class="form-control p-3" placeholder="Enter username" autocomplete="off" required>
                 </div>
-                <select  class="form-select w-25 p-3" required>
-                    <option selected value="1">Sala 1</option>
-                    <option value="2">Sala 2</option>
-                    <option value="3">Sala 3</option>
-                    <option value="4">Sala 4</option>
+                
+                <select id="chatSelect" class="form-select w-25 p-3" required>
+                    <option selected value="1">Room 1</option>
+                    <option value="2">Room 2</option>
+                    <option value="3">Room 3</option>
+                    <option value="4">Room 4</option>
                 </select>
-                <div class="d-flex text-center justify-content-center align-items-center">
-                    <label class="fs-3 w-75 d-flex justfy-content-center align-items-center gap-4 ms-5 ps-4" id="userPhotoLabel">Seleciona una foto</label>
-                    <input type="file" accept="image/*" name="imageInput" class="form-control">     
+
+                <div class="d-flex text-center justify-content-center align-items-center userPhotoDiv">
+                    <label for="imageInput" class="w-75 d-flex justfy-content-center align-items-center gap-4 ms-5 ps-4 fs-5" id="userPhotoLabel">Foto usuario</label>
+                    
+                    <input type="file" id="imageInput" accept="image/*" name="imageInput" class="form-control">
                 </div>
-                <p id="photo-error" class="p-1">Selecciona una imagen</p>
-            <input type="submit" value="Entra" class="btn btn-success p-5"></input>
+                <p id="photo-error" class="p-1">Foto subida</p>
+            <input type="submit" id="joinChatButton" value="Entrar" class="btn btn-success p-5"></input>
             </form>
         </div>
         

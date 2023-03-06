@@ -5,8 +5,6 @@ function uploadUserPhoto(files) {
   photo = files[0];
 }
 
-
-
 // Setear ID del usuario
 socket.on("connect", function () {
   socket.emit("setID", socket.id);
