@@ -121,8 +121,6 @@ io.on('connection', (socket) => {
       usersRoom4 = usersRoom4.filter(user => user.id !== socket.userID);
       }
 
-    console.log(`DESCONECTADO --> ID: ${socket.userID}`);
-
     if(existsSync(`${socket.pathToUpload}/${socket.userID}.jpg`) == true){
       unlink(`${socket.pathToUpload}/${socket.userID}.jpg`, (err) => {
         if(err){
